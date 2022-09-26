@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1교시</title>
+</head>
+<body>
+    <h1>prompt함수 사용해보기</h1>
+    <h3>primpt함수를 사용하여 숫자를 입력받아 그 숫자 값이 90보다 크면 "A" 그렇지 않고 80보다 크고 90보다 작으면 "B" 나머지는 "F" 로출력하는 프로그램작성</h3>
+    <script>
+        let num=prompt("숫자를 입력하세요.",0); 
+        num1=parseInt(num)   /* parseInt를 사용해 정수 -> 숫자로 변경*/
+        if(num1 >90 && num<=100){
+            document.write("A")
+        }
+        else if(num1 >=80 && num1<90){
+            document.write("B")
+        }
+        else if(num1>100){
+            document.write("잘못입력하셨습니다.")
+        }
+        else{
+            document.write("F")
+        }
+    </script>
+</body>
+</html>
