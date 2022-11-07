@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열메소드</title>
+</head>
+<body>
+    <h1>배열의 다양한 메소드 사용</h1>
+    <h3>concat</h3>
+    <hr>
+    <script>
+        function pr(meg,arr) {document.write(meg + arr.toString() + "<br>")}
+        let a = new Array("황",2, "김", "이");
+	    let b = new Array("박","허");
+	    pr("배열 a=",a)
+        pr("배열 b=",b)
+        document.write("<br>")
+        let c=a.join("*##");
+        /*let c=a.concat(b);    concat = 다른배열에 있는것을 합칠수 있다*/
+        document.write(c)
+    </script>
+</body>
+</html>
