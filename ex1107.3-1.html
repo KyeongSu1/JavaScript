@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date객체</title>
+</head>
+<body id="back">
+    <h1>string객체</h1>
+    <hr>
+    <script>
+        let a = new String("Boys and Girls");
+        let b = "!!";
+        document.write("a : " + a + "<br>");
+        document.write("b : " + b + "<br>");
+        document.write(a.charAt(3) + "<br>"); /* []배열 출력 */
+        document.write(a.concat(b, "입니다") + "<br>"); /* ab+입니다 까지 추가 되서 출력 */
+        document.write(a.indexOf("s") + "<br>");    /* s가 문자배열 번호 출력 */
+        document.write(a.indexOf("and") + "<br>"); /* 문자가 있으면 그대로 출력 없으면 -1 로 출력됌*/
+        document.write(a.slice(5, 8) + "<br>");  /* 배열5~8번쨰 출력 */
+        document.write(a.substr(5, 3) + "<br>"); /* 배열 5번째 자리에서 +3자리 출력 */
+        document.write(a.toUpperCase() + "<br>"); /* 대문자로 전환 */
+        document.write(a.replace("and", "or") + "<br>");  /* and를 or로 변경해라 이런뜻 */
+        document.write("   kitae   ".trim() + "<br><hr>"); /* 공백을 없애서 출력 */
+
+
+        let c=new String("B12,o,y");
+        document.write("c");
+        let sub=c.split(" , ");
+	    document.write("<br>" + sub[0]);
+    </script>
+</body>
+</html>

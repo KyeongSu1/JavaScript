@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Books(title,author,publisher,price) {  
+	    this.title = title;     //도서명
+        this.author = author;   // 저자
+        this.publisher = publisher; // 출판사
+        this.price = price; //가격
+
+        this.letNum=function(name){
+            document.write(name+"님이 "+ this.title + "을 대여했습니다.");
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>도서에 대해 프로토타입을 만들어 사용 </h1>
+    <hr>
+    <script>
+        let Books1=new Books("자바스크립트","김경수","비전출판","10000");
+        Books1.letNum("김경수");
+    </script>
+</body>
+</html>
