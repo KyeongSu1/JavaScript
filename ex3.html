@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>document.getElementsByClassName()</title>
+<script>
+function viewPlace() {
+	let tagArray = document.getElementsByClassName("place");
+	for(let i=0; i<tagArray.length; i++) {
+		let tag = tagArray[i];
+		tag.style.color = "yellowgreen";
+		tag.style.fontSize = "20px";
+		tag.style.textDecoration = "underline";
+	}
+}
+function viewFood() {
+	let tagArray = document.getElementsByClassName("food");
+	for(let i=0; i<tagArray.length; i++) {
+		var tag = tagArray[i];
+		tag.style.color = "green";
+			}
+}
+</script>
+</head>
+<body>
+    <h3>가고 싶은 곳 먹고 싶은 것</h3><br>
+        <button onclick="viewPlace()">가고 싶은 곳</button>
+        <button onclick="viewFood()">먹고 싶은 것</button>
+    </h3>
+    <hr>
+    <p><span class="place">일본</span>에 가서 <span class="food">초밥</span>를 먹고 싶고요.
+    <span class="place">이탈리아</span>에 가서 <span class="food">파스타</span>도 먹고 싶어요. 제일 가고 싶은 곳 <span class="place">유럽여행</span>에서 <span class="food">다양한음식</span>도 먹고 싶어요</p>
+    </body>
+    </html>
+    
