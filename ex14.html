@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI계산하기</title>
+</head>
+<body>
+    <script>
+        var height=prompt("신장을 입력하세요.","cm");
+        var weight=prompt("몸무게를 입력하세요.", "kg");
+       
+
+        var bmiResult=weight/((height/100)*(height/100));
+      
+
+        var result=(bmiResult >=25)? "과체중" :"정상 ";
+        var result=(bmiResult >=22)? "정상"   : "정상 ";
+        var result=(bmiResult <=22)? "저체중" :"정상 ";
+        
+        
+        document.write("<br> 당신의 키는"+ height +"cm 이고" + "몸무게는" + weight + "이며" + "비만도는" + bmiResult +"이므로" + result +"입니다."); 
+
+        if(bmiresult<25.0){
+            document.write(result + "과체중 입니다.");
+        }
+        else if((bmiresult>=22)&&(BMI<=25)){
+            document.write(result + "정상 입니다.")
+        }
+        else if(bmiresult>22){
+            document.write(result + "저체중 입니다.")
+        }
+        
+        
+    </script>
+</body>
+</html>

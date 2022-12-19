@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	// 프로토타입 만들기 : 생성자 함수 작성
+	function Account(owner, code, balance) {
+		// 프로퍼티 만들기
+		this.owner = owner; 	// 계좌 주인 프로퍼티 만들기 
+		this.code = code; 		// 계좌 코드 프로퍼티 만들기 
+		this.balance = balance; // 잔액 프로퍼티 만들기 
+		
+		// 메소드 만들기
+		this.inquiry = function () { return this.balance; }
+		this.deposit = function (money) { this.balance += money; } 
+		this.withdraw = function (money) { // 예금 인출, money는 인출하는 액수
+			// money가 balance보다 작다고 가정
+			this.balance -= money; 
+			return money;
+		} 
+	}
+</script>
+</head>
+<body>
+<h3>Student 프로토타입 만들기</h3>
+<hr>
+<script>
+	document.write("학번 : 201914004" + "<br>");
+	document.write("이름 : 김경수" + "<br>");
+	document.write("전화번호 : 010-1234-5678" + "<br>");
+</script>
+<br>
+<form>
+    <input type='button' value='성적확인' onclick='alert("학생의 성적은 A등급입니다.")'/>
+</form>
+
+</body>
+</html>
